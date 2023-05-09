@@ -33,7 +33,7 @@ public class TestNLP {
 
         TableMapReduceUtil.initTableReducerJob(
                 targetTable.getNameAsString(),        // output table
-                null,    // reducer class
+                IntSumReducer.class,    // reducer class
                 job);
 
 
